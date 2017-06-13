@@ -4,7 +4,10 @@ app.config(function($routeProvider) {
     .when("/index", {
         templateUrl : "index.html"
     })
-    .when("/about", {
+    .when("/home", {
+        templateUrl : "views/home.html",
+        controller : "controllers/homeCtrl"
+    }).when("/about", {
         templateUrl : "views/about.html",
         controller : "controllers/aboutCtrl"
     });
